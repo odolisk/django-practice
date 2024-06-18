@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+    Курс {{ course.title }}
+{% endblock title %}
+{% block content %}
+    <h1 class="mt-5">Курс  {{ course.title }}</h1><br>
+    <h2>Категория: {{ course.category }}</h2><hr>
+    Цена: {{ course.price }}<br><hr>
+    Кол-во участников: {{ course.students_qty }}<br><hr>
+    Количество комментариев: {{ course.comments_qty}}<br><hr>
+{% endblock content %}
